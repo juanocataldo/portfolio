@@ -76,7 +76,7 @@ export function Form() {
             });
           form.reset()
           handleShow();
-          setEmail(null)
+          setEmail(null) 
           errorMsg.innerText = ""
         } else {
           setError(true)
