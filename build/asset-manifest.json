@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.be6df384.css",
+    "main.js": "/static/js/main.4e18bc4f.js",
+    "static/js/787.35071540.chunk.js": "/static/js/787.35071540.chunk.js",
+    "static/media/world.gif": "/static/media/world.d48a9fea2489c3c7888d.gif",
+    "static/media/laptop.png": "/static/media/laptop.3eecd635b8945c1ce045.png",
+    "static/media/wallpapaer2.png": "/static/media/wallpapaer2.d19a1b67b3edc995c540.png",
+    "static/media/wallpapaer1.png": "/static/media/wallpapaer1.ad537c264dbaa8aedada.png",
+    "static/media/weather.gif": "/static/media/weather.60188dd694639656ac60.gif",
+    "static/media/goals.png": "/static/media/goals.279b334bcdee73e4c199.png",
+    "static/media/fingers3.png": "/static/media/fingers3.118000e58b5fe5a2ddc8.png",
+    "static/media/lego1.png": "/static/media/lego1.bbabd36e21dc77f7e359.png",
+    "static/media/weatherApp.png": "/static/media/weatherApp.2f40a220f7d82291b364.png",
+    "static/media/workSimulation.png": "/static/media/workSimulation.9856b36cbbc715f224a9.png",
+    "static/media/lego2.png": "/static/media/lego2.d2db33ca27fd31a852f0.png",
+    "static/media/dogApp.png": "/static/media/dogApp.5617a0884097c45b55d8.png",
+    "static/media/up.png": "/static/media/up.9f3334e120ee47a60272.png",
+    "index.html": "/index.html",
+    "main.be6df384.css.map": "/static/css/main.be6df384.css.map",
+    "main.4e18bc4f.js.map": "/static/js/main.4e18bc4f.js.map",
+    "787.35071540.chunk.js.map": "/static/js/787.35071540.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.be6df384.css",
+    "static/js/main.4e18bc4f.js"
+  ]
+}
