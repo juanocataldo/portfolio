@@ -1,0 +1,23 @@
+.background{
+    background: rgb(255,183,95);
+background: linear-gradient(0deg, rgba(255,183,95,1) 0%, rgba(112,3,12,1) 100%);
+
+}
+
+.me-description{    
+    width: 90%;
+    text-align: center;
+    margin: auto;
+    color: white;    
+}
+
+.me-description h5{
+
+    color: rgba(255, 255, 255, 0.747);
+}
+
+.cardme{
+    background: rgb(255,255,255);
+background: linear-gradient(180deg, rgb(136, 87, 75) 0%, rgba(167, 167, 167, 0.021) 100%);
+    border-radius: 40px;
+}

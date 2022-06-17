@@ -1,0 +1,73 @@
+
+
+.banner1 {
+    height: 400px;    
+    width:  100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+    background-image:   
+      url('https://images8.alphacoders.com/738/738122.png'), 
+      url('https://images8.alphacoders.com/738/738122.png');
+      
+    background-repeat: repeat-x;
+    border-radius: 40px;
+    border: 1px rgb(76, 76, 76) solid;
+    background-position: 
+      0 20%,
+      0 100%,
+      0 50%,
+      0 100%,
+      0 0;
+    background-size: 
+      2500px,
+      800px,
+      500px 200px,
+      1000px,
+      400px 260px;
+    animation: 190s para infinite linear;
+    /* margin-bottom: 50px; */
+    -webkit-box-shadow: 0px 5px 15px 5px #000000; 
+box-shadow: 0px 5px 15px 5px #0000007b;
+    }
+  
+  @keyframes para {
+    100% {
+      background-position: 
+        -5000px 20%,
+        -800px 95%,
+        500px 50%,
+        1000px 100%,
+        400px 0;
+      }
+    }
+
+  
+  @keyframes AnimateBG { 
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+  }
+
+.box{
+    width: 35rem;
+    margin: auto;
+    color: rgb(0, 0, 0);
+}
+
+.box h1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+
+.box h2{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    color: rgb(43, 43, 43);
+}
+
+.box h5{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

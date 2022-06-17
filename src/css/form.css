@@ -1,0 +1,30 @@
+.input {
+    border: none;
+    border-radius: 15px;
+    padding: 15px;
+    background-color: #e8e8e8;
+    box-shadow: 6px 6px 12px #ffffff,
+                -6px -6px 12px #c5c5c5;
+    font-size: medium;
+    font-weight: bold;
+    max-width: 200px;
+   }
+   
+   .input:focus {
+    outline-color: white;
+    place-content: "Enter your message!";
+   }
+
+   .input::placeholder{
+    color: rgb(184, 184, 184);
+   }
+
+   @media only screen and (min-width: 375px) and (max-width: 667px) {
+    .input{
+        max-width:100%
+    }
+   }
+
+   #contactLabel{
+    color: rgb(113, 113, 113);
+   }

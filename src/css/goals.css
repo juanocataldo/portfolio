@@ -1,0 +1,173 @@
+
+.cardw {
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 30px;
+    justify-content: center;
+    border-radius: 30px;
+    background: #e0e0e0;
+    color: black;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+   }
+
+   .cardw img{
+    width: 120px;
+    height: 80px;
+   }
+
+   .cardw span{
+    text-align: justify;
+   }
+
+
+.goalGrid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.goals {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: space-around;
+    height: 450px;
+
+    margin: 20px;
+    width: 40%;
+
+    border-radius: 30px;
+}
+
+.goals img {
+    width: 150px;
+}
+
+#lego1 {
+    position: absolute;
+    z-index: 1;
+    margin-top: 21px;
+}
+
+#lego2 {
+    position: absolute;
+    z-index: 2;
+    margin-bottom: 39px;
+}
+
+
+
+@media only screen and (min-width: 375px) and (max-width: 667px) {
+
+    #lego2 {
+        position: absolute;
+        z-index: 2;
+        margin-bottom: 19px;
+    }
+
+    .goalGrid{
+        flex-direction: column;
+    }
+
+    .cardw{
+        width: 100%;
+        margin-bottom: 30px;
+        margin-top: 10px;
+    }
+
+    .cardN{
+        margin: 20px 0px 20px 0px;
+    }
+
+    .legos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+
+        padding-top: 60px;
+    }
+
+    #grow {
+        background-image: url('../assets/wallpapaer1.png');
+        background-size: cover;
+        width: 100%;
+
+        border-radius: 30px;
+    }
+
+    #big {
+        background-image: url('../assets/wallpapaer2.png');
+        background-size: cover;
+        width: 100%;
+
+        border-radius: 30px;
+    }
+
+  
+}
+
+@media only screen and (min-width: 685px) {
+    .legos {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;
+        justify-content: center;
+
+        padding-top: 60px;
+    }
+
+    #grow {
+        background-image: url('../assets/wallpapaer1.png');
+        background-size: cover;
+
+        -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+        box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+    }
+
+    #big {
+        background-image: url('../assets/wallpapaer2.png');
+        background-size: cover;
+
+        -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+        box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+    }
+
+  
+
+}
+
+
+#arrow {
+    -webkit-animation: mover 2s infinite alternate;
+    animation: mover 1s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-20px);
+    }
+}
