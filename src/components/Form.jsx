@@ -89,7 +89,9 @@ export function Form() {
     }
   }
 
-  return <div className='container'>
+  return <section id="contact">
+
+  <div className='container'>
 
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
@@ -133,4 +135,5 @@ export function Form() {
 
     </form>
   </div>
+  </section> 
 }

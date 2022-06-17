@@ -12,7 +12,9 @@ export function SecondBanner({theme}) {
     },[])
 
 
-    return <div className="banner2">
+    return <section id="techs">
+
+        <div className="banner2">
         <h4 data-aos="fade" data-aos-once='true'  className="titles">FULLSTACK?</h4>
         {/*   */}
 
@@ -39,4 +41,5 @@ export function SecondBanner({theme}) {
                     </span>
             </div>
     </div>
+    </section> 
 }

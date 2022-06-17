@@ -3,7 +3,7 @@ import '../css/navbar.css'
 export function Navbar(){
     return <div>
       
-        <nav class="navbar navbar-expand-lg navb navbar-dark">
+        <nav class="navbar navbar-expand-lg navb navbar-light">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">FullStacked</a>
     
@@ -17,16 +17,16 @@ export function Navbar(){
           <a class="nav-link active" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Techs</a>
+          <a class="nav-link" href="#techs">Techs</a>
         </li>        
         <li class="nav-item">
-          <a class="nav-link" href="#">Apps</a>
+          <a class="nav-link" href="#goals">Goals</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Goals</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contact">Contact</a>
         </li>
       </ul>
     </div>
