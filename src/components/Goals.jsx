@@ -8,13 +8,13 @@ import lego2 from '../assets/lego2.png'
 import goals from '../assets/goals.png'
 
 
-export function Goals() {
+export function Goals({theme}) {
     useEffect(() => {
         Aos.init({ duration: 2000 })
     }, [])
 
-    return <div className='container mt-4'>
-        <h1 data-aos="fade" data-aos-once='true' className='titles'>GOALS</h1>
+    return <div className='App' data-theme={theme}>
+        <h1 data-aos="fade" data-aos-once='true' className='titles' style={{textAlign:"center"}} >GOALS</h1>
         <div className="goalGrid">
 
         <div class="cardw">
@@ -22,7 +22,7 @@ export function Goals() {
             
             <div data-aos="fade" data-aos-once='true'>
                 <h2 className='mt-4'>-Grow as a dev-</h2>
-                <span className='content'>This is my dream goal. Start as a dev jr, absorb knowledge from my coworkers and team leaders and grow as much as I can. Maybe become a Team Leader too, hopefully.</span>
+                <span className='content'>This is my dream goal. Start as a jr dev, absorb knowledge from my coworkers and team leaders, and grow as much as I can. Maybe become a Team Leader too, hopefully.</span>
             </div>  
         </div>
 
@@ -34,7 +34,7 @@ export function Goals() {
             
             <div data-aos="fade" data-aos-once='true'>
                 <h2 className=''>-Participate in big projects-</h2>
-                <span >I think that participating in big projects leads you to learn a lot. Let devs to be part of a great oportunity to leave their mark. Maybe starting participating with small things, and later make big part of the App. </span  >
+                <span >I think that participating in big projects leads you to learn a lot. Let devs to be part of a great oportunity to leave their mark. Maybe start participating with small things. </span  >
             </div> 
         </div>
        

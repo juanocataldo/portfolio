@@ -2,12 +2,11 @@
     border: none;
     border-radius: 15px;
     padding: 15px;
-    background-color: #e8e8e8;
-    box-shadow: 6px 6px 12px #ffffff,
-                -6px -6px 12px #c5c5c5;
+    background-color: var(--background);
+    box-shadow: var(--shadow);
     font-size: medium;
     font-weight: bold;
-    max-width: 200px;
+    width: 100%;
    }
    
    .input:focus {
@@ -31,4 +30,12 @@
 
    .btnForm{
     margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--background);
+    color: var(--text-primary);
+   }
+
+   .btnForm span{
+    color: var(--text-primary);
    }

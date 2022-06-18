@@ -1,9 +1,24 @@
+import { useEffect } from 'react'
 import '../css/navbar.css'
 
-export function Navbar(){
+export function Navbar({theme}){
+
+  const navBar = document.getElementById('navB')
+
+  useEffect(()=>{
+    if(navBar){
+      if(theme==='dark'){
+        navBar.className = 'navbar navbar-expand-lg navb navbar-dark'
+      }else{
+        navBar.className = 'navbar navbar-expand-lg navb navbar-light'
+      }
+
+    }
+  },[theme])
+
     return <div>
       
-        <nav class="navbar navbar-expand-lg navb navbar-light">
+        <nav class="navbar navbar-expand-lg navb navbar-light" id='navB'>
   <div class="container-fluid">
     <a class="navbar-brand" href="#">FullStacked</a>
     

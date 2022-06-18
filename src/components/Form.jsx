@@ -129,7 +129,7 @@ export function Form() {
 
         <br /><br />
         <div className="btnForm">
-          <button type='submit' class="btn">Send</button>
+          <button type='submit' class="btn"><span>Send</span></button>
         </div>
       </div>
 
