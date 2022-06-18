@@ -11,18 +11,16 @@ import { useEffect } from 'react';
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? true : false);
-  const toggle = document.getElementById('toggleTheme')
-  
-  useEffect(()=>{
-    setTheme(false)
-  },[])
+  const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
-  const switchTheme = (e) => {
-    const newTheme = e.target.checked === true ? true : false
+  const switchTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark'
     setTheme(newTheme)
-    console.log(e.target.checked)
   }
+
+  useEffect(()=>{
+    setTheme('light')
+  },[])
 
   return (
     <div className="App" data-theme={theme}>
@@ -32,7 +30,7 @@ function App() {
 
       <div className='toggleBar'>
         <label class="switch">
-          <input type="checkbox" onChange={switchTheme} id="toggleTheme" />
+          <input type="checkbox" onChange={switchTheme} />
           <span class="slider"></span>
         </label>
       </div>
