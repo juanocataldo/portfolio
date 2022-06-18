@@ -1,235 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.banner2 {
-    background-color: var(--background);
-    /* margin-top: 50px; */
-    color: rgb(112, 112, 112);
-    width: 100vw;
-}
-
-.fullstack {
-    text-align: center;
-    color: white;
-    padding: 40px;
-    
-}
-
-.fullstack span{
-    font-size: 10px;
-}
-
-.knowledge-font {
-    font-size: 50px;
-    font-weight: 100;
-    margin-left: 0%;
-}
-
-
-.know-box {
-    margin: auto;
-    text-align: center;
-}
-
-img {
-    padding: 10px;
-    width: 350px;
-}
-
-.vl {
-    border-left: thick solid #ff0000;
-}
-
-#react {
-    color: #c980f5;
-}
-
-#express {
-    color: #959ff1;
-}
-
-#sql {
-    color: #59d4d5;
-}
-
-#plsql {
-    color: #2eff78;
-}
-
-#javascript {
-    color: #d8ff00;
-}
-
-#separator {
-    width: auto;
-}
-
-
-
-
-#laptop {
-    -webkit-animation: mover 2s infinite alternate;
-    animation: mover 2s infinite alternate;
-
-}
-
-@-webkit-keyframes mover {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-20px);
-    }
-}
-
-@keyframes mover {
-    0% {
-        transform: translateY(0);
-    }
-
-    100% {
-        transform: translateY(-20px);
-    }
-}
-
-.containerQ {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    background-image: url('../assets/fingers3.png');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-position: center;
-
-}
-
-
-.techs {
-    text-align: left;
-    margin-left: 10px;
-    text-shadow: 2px 0 10px rgba(0, 0, 0, 0.372), -2px 0 10px rgba(0, 0, 0, 0.372), 0 2px 10px rgba(0, 0, 0, 0.372), 0 -2px 10px rgba(0, 0, 0, 0.372), 1px 1px rgba(0, 0, 0, 0.372), -1px -1px 0 rgba(0, 0, 0, 0.372), 1px -1px 0 rgba(0, 0, 0, 0.372), -1px 1px 0 rgba(0, 0, 0, 0.372);
-}
-
-.techs h1 {
-    font-size: 4.5vw;
-}
 
 .titles {
     font-family: 'Roboto', sans-serif;
-    color: var(--text-primary);
-    /* background: -webkit-linear-gradient(rgba(5, 7, 7, 0.996), rgba(252, 208, 12, 0));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent; */
     font-size: 15vw;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.265);
+    color: var(--text-primary);
 }
+.banner2 {
+    /* background-color: #e0e0e0; */
+    margin-top: 50px;
+    color: rgb(112, 112, 112);
 
-
-
-
+}
 
 svg {
     font-weight: bold;
     max-width: 600px;
     height: 100%;
-}
-
-
-
-
-
-
-
-
-.move {
-    margin-top: -8%;
-    white-space: nowrap;
-    font-size: 8.5vw;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: #4cacb3;
-    
-}
-
-.move:first-of-type {
-    /* For increasing performance 
-                       ID/Class should've been used. 
-                       For a small demo 
-                       it's okaish for now */
-    animation: showup 5s infinite;
-}
-
-.move:last-of-type {
-    width: 0px;
-    animation: reveal 7s infinite;
-}
-
-.move:last-of-type span {
-    margin-left: -355px;
-    animation: slidein 7s infinite;
-}
-
-@keyframes showup {
-    0% {
-        opacity: 0;
-    }
-
-    20% {
-        opacity: 1;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
-}
-
-@keyframes slidein {
-    0% {
-        margin-left: -800px;
-    }
-
-    20% {
-        margin-left: -800px;
-    }
-
-    35% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: 0px;
-    }
-}
-
-@keyframes reveal {
-    0% {
-        opacity: 0;
-        width: 0px;
-    }
-
-    20% {
-        opacity: 1;
-        width: 0px;
-    }
-
-    30% {
-        width: 55px;
-    }
-
-    80% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        width: 355px;
-    }
 }
 
 /* CEL */
@@ -338,4 +126,214 @@ svg {
 
 
 
+}
+
+
+
+/* GRANDE */
+@media only screen and (min-width: 685px) {
+   
+
+    .fullstack {
+        text-align: center;
+        color: white;
+        padding: 40px;
+        
+    }
+
+    .fullstack span{
+        font-size: 10px;
+    }
+
+    .knowledge-font {
+        font-size: 50px;
+        font-weight: 100;
+        margin-left: 0%;
+    }
+
+
+    .know-box {
+        margin: auto;
+        text-align: center;
+    }
+
+    img {
+        padding: 10px;
+        width: 350px;
+    }
+
+    .vl {
+        border-left: thick solid #ff0000;
+    }
+
+    #react {
+        color: #c980f5;
+    }
+
+    #express {
+        color: #959ff1;
+    }
+
+    #sql {
+        color: #59d4d5;
+    }
+
+    #plsql {
+        color: #2eff78;
+    }
+
+    #javascript {
+        color: #d8ff00;
+    }
+
+    #separator {
+        width: auto;
+    }
+
+
+
+
+    #laptop {
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 2s infinite alternate;
+
+    }
+
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    .containerQ {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        background-image: url('../assets/fingers3.png');
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+
+    }
+
+
+    .techs {
+        text-align: left;
+        margin-left: 10px;
+        text-shadow: 2px 0 10px rgba(0, 0, 0, 0.372), -2px 0 10px rgba(0, 0, 0, 0.372), 0 2px 10px rgba(0, 0, 0, 0.372), 0 -2px 10px rgba(0, 0, 0, 0.372), 1px 1px rgba(0, 0, 0, 0.372), -1px -1px 0 rgba(0, 0, 0, 0.372), 1px -1px 0 rgba(0, 0, 0, 0.372), -1px 1px 0 rgba(0, 0, 0, 0.372);
+    }
+
+    .techs h1 {
+        font-size: 4.5vw;
+    }
+}
+
+
+
+
+
+
+.move {
+    margin-top: -8%;
+    white-space: nowrap;
+    font-size: 8.5vw;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #4cacb3;
+    
+}
+
+.move:first-of-type {
+    /* For increasing performance 
+                       ID/Class should've been used. 
+                       For a small demo 
+                       it's okaish for now */
+    animation: showup 5s infinite;
+}
+
+.move:last-of-type {
+    width: 0px;
+    animation: reveal 7s infinite;
+}
+
+.move:last-of-type span {
+    margin-left: -355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+
+    20% {
+        margin-left: -800px;
+    }
+
+    35% {
+        margin-left: 0px;
+    }
+
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+
+    30% {
+        width: 55px;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        width: 355px;
+    }
 }

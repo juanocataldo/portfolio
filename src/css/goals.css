@@ -78,12 +78,14 @@
 
     .goalGrid{
         flex-direction: column;
+        align-content: center;
     }
 
     .cardw{
-        width: 100%;
+        width: 90%;
         margin-bottom: 30px;
         margin-top: 10px;
+        text-align: center;
     }
 
     .cardN{

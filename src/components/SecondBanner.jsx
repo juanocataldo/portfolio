@@ -15,11 +15,8 @@ export function SecondBanner({theme}) {
     return <section id="techs">
 
         <div className="banner2">
-            {theme === 'dark' ? 
-                <h4 data-aos="fade" data-aos-once='true'  className="titles" style={{textAlign:"center",color:"white"}}>FULLSTACK?</h4>
-             : 
-                <h4 data-aos="fade" data-aos-once='true'  className="titles" style={{textAlign:"center"}}>FULLSTACK?</h4>
-            }
+            <h4 data-aos="fade" data-aos-once='true'  className="titles" style={{textAlign:"center"}}>FULLSTACK?</h4>
+            
         {/*   */}
 
         <div data-aos="fade-up" className="containerQ">

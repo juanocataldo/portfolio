@@ -15,7 +15,7 @@ code {
 :root {
   --background: #E0E0E0;
   --text-primary: black;
-  --text-secondary: royalblue;
+  --text-secondary: rgb(65, 65, 65);
   --accent: purple;
   --shadow:15px 15px 30px #bebebe,
   -15px -15px 30px #ffffff;
