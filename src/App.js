@@ -14,12 +14,12 @@ function App() {
   const [theme, setTheme] = useLocalStorage('theme', defaultDark ? 'dark' : 'light');
 
   const switchTheme = () => {
-    const newTheme = theme === 'dark' ? 'light' : 'dark'
+    const newTheme = theme === 'Dark' ? 'Light' : 'Dark'
     setTheme(newTheme)
   }
 
   useEffect(()=>{
-    setTheme('light')
+    setTheme('Light')
   },[])
 
   return (
@@ -29,6 +29,7 @@ function App() {
       <Navbar theme={theme} />
 
       <div className='toggleBar'>
+        <span>{theme} Mode</span>
         <label class="switch">
           <input type="checkbox" onChange={switchTheme} />
           <span class="slider"></span>

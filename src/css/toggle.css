@@ -59,6 +59,10 @@
 
   .toggleBar{
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     margin-bottom: 30px;
+    flex-direction: column;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-right: 6%;
   }

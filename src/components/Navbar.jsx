@@ -7,7 +7,7 @@ export function Navbar({theme}){
 
   useEffect(()=>{
     if(navBar){
-      if(theme==='dark'){
+      if(theme==='Dark'){
         navBar.className = 'navbar navbar-expand-lg navb navbar-dark'
       }else{
         navBar.className = 'navbar navbar-expand-lg navb navbar-light'
