@@ -20,7 +20,7 @@ code {
   --shadow:15px 15px 30px #bebebe,
   -15px -15px 30px #ffffff;
 }
-[data-theme='dark'] {
+[data-theme=true] {
   --background: #212121;
   --text-primary: rgb(255, 255, 255);
   --text-secondary: grey;
