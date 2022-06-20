@@ -36,9 +36,9 @@ export function SecondBanner({theme}) {
 
            
         </div>
-        <div className='m-4'>
+        <div className='letter mt-5'>
                 <span style={{fontSize:"20px"}}>
-                    I'm a FullStack Web Developer in React/Redux, Node/Express, PostgreSQL/Sequelize. I'm looking for my first dev "job" (i put job in quotes because I see it more as a pleasure thing to do than a job). Spoiler alert: cliche's comming: Coding is really my passion. Think that a developer can make an app to resolve/optimize another job, is very inspire.
+                    I'm a FullStack Web Developer in React/Redux, Node/Express, PostgreSQL/Sequelize. I'm looking for my first dev "job" (i put job in quotes because I see it more as a pleasure thing to do than a job). Coding is really my passion. Thinking that a developer can build something to resolve/optimize another job, is very inspiring.
                     </span>
             </div>
     </div>
