@@ -35,7 +35,7 @@ export function Project() {
 
         <div className='letter mt-5 mb-4'>
             <span >
-                Recently I developed a few Apps, as a practice for the Bootcamp that I just finished. The first one, a Weather App, consuming an Api to consult weather from Countries / Cities, and displaying it with React. <br />Then, as a final (individual) bootcamp project, I made an App to create activities in Countries, like a Tourism App. Here I connect the front with a Postgres DB, deployed in Heroku. And last but not least, the final group project of the Bootcamp, that is an eCommerce.
+                Recently I developed a few Apps, as a practice for the Bootcamp that I just finished. The first one, a Weather App, consuming an Api to consult weather from Countries / Cities, and displaying it with React. <br />Then, as a final (individual) bootcamp project, I made an App to create activities in Countries, like a Tourism App. Here I connect the front with a Postgres DB, deployed in Heroku. And last but not least, the bootcamp's final group project, that is an eCommerce.
             </span>
         </div>
 
