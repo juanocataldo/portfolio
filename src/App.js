@@ -25,9 +25,7 @@ function App() {
   return (
     <div className="App" data-theme={theme}>
       
-      
       <Navbar theme={theme} />
-
       <div className='toggleBar'>
         <span>{theme} Mode</span>
         <label class="switch">
