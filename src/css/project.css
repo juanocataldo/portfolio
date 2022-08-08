@@ -1,156 +1,176 @@
 /* From uiverse.io by @adamgiebl */
 .cardN {
-    width: 190px;
-    height: 254px;
-    background: rgb(223, 225, 235);
-    border-radius: 50px;
-    box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-   }
+    /* width: 190px; */
+   
+   /* background: rgb(223, 225, 235); */
+   /* border-radius: 50px; */
+   /* box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px; */
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   flex-wrap: nowrap;
+   align-items: center;
+  }
 
+.titulo{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
 
+.titulo span{
+   margin-left: 5px;
+}
 
+.vid{
+   width: 320px;
+   height: 240px;
+}
+
+.videos{
+   display: flex;
+   flex-direction: row;
+   justify-content: space-evenly;
+   align-items: center;
+}
 
 
 .appCard {
-    width: 200px;
+   width: 200px;
 }
 
 
 
 .project-card {
-    height: 200px;
-    width: 200px;
-    background: rgb(83, 83, 83);
-    background: linear-gradient(301deg, rgba(83, 83, 83, 1) 0%, rgba(129, 228, 222, 1) 100%);
-    border-radius: 50%;
-    border: 4px white solid;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
-    justify-content: space-around;
-    align-items: center;
+   height: 200px;
+   width: 200px;
+   background: rgb(83, 83, 83);
+   background: linear-gradient(301deg, rgba(83, 83, 83, 1) 0%, rgba(129, 228, 222, 1) 100%);
+   border-radius: 50%;
+   border: 4px white solid;
+   display: flex;
+   flex-direction: column;
+   align-content: space-around;
+   justify-content: space-around;
+   align-items: center;
 }
 
 
 
 
 @media only screen and (min-width: 200px) and (max-width: 686px) {
-    .project-description {
-        text-align: center;
-        width: 60%;
-        margin-top: 15px;
-    }
+   .project-description {
+       text-align: center;
+       width: 60%;
+       margin-top: 15px;
+   }
 
-    .project-box {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+   .project-box {
+       display: flex;
+       flex-wrap: wrap;
+       align-content: center;
+       flex-direction: row;
+       justify-content: center;
+       align-items: center;
 
-    }
+   }
 
-  
+ 
 }
 
 @media only screen and (min-width: 685px) {
-   
-    .project-box {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        width: 90%;
-        margin: auto;
+  
+   .project-box {
+       display: flex;
+       flex-direction: row;
+       flex-wrap: wrap;
+       justify-content: space-around;
+       align-items: center;
+       width: 90%;
+       margin: auto;
 
-    }
+   }
 
 
 }
 
 .carda {
-    background: rgb(255, 255, 255);
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(69, 70, 69, 0.5051062661392682) 100%);
-    border-radius: 40px;
-    width: 20%;
-    padding: 20px;
-    -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
-    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+   background: rgb(255, 255, 255);
+   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(69, 70, 69, 0.5051062661392682) 100%);
+   border-radius: 40px;
+   width: 20%;
+   padding: 20px;
+   -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+   box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
 }
 
 .carda2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 330px;
-    height: 300px;
-    text-align: center;
-    -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
-    box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
-    border-radius: 30px;
-    margin: 20px;
-    
-    /* background-color: #2121219a; */
+   display: flex;
+   flex-direction: row;
+   flex-wrap: nowrap;
+   justify-content: center;
+   align-items: center;
+   width: 330px;
+   height: 300px;
+   text-align: center;
+   -webkit-box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+   box-shadow: 0px 5px 15px 5px rgba(0, 0, 0, 0.88);
+   border-radius: 30px;
+   margin: 20px;
    
-    
+   /* background-color: #2121219a; */
+  
+   
 }
 
 #w{
-    background-image: url('../assets/weatherApp.png');
-    background-size:200% ;
-    background-color: rgba(0, 0, 0, 0.267);
+   background-image: url('../assets/weatherApp.png');
+   background-size:200% ;
+   background-color: rgba(0, 0, 0, 0.267);
 }
 
 #db{
-    background-image: url('../assets/dogApp.png');
-    background-size:200% ;
-    background-color: rgba(0, 0, 0, 0.267);
+   background-image: url('../assets/dogApp.png');
+   background-size:200% ;
+   background-color: rgba(0, 0, 0, 0.267);
 }
 
 #team{
-    background-image: url('../assets/workSimulation.png');
-    background-size:200% ;
-    background-color: rgba(0, 0, 0, 0.267);
+   background-image: url('../assets/workSimulation.png');
+   background-size:200% ;
+   background-color: rgba(0, 0, 0, 0.267);
 }
 
 .pantalla{
-    background-color: rgba(0, 0, 0, 0.681);
-    border-radius: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    
+   background-color: rgba(0, 0, 0, 0.681);
+   border-radius: 30px;
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+   
 }
 
 .carda2 img {
-    width: 40%;
+   width: 40%;
 }
 
 .btnCardo{
-    background-color: aqua;
-    text-decoration: none;
-    width: 100px;
+   background-color: aqua;
+   text-decoration: none;
+   width: 100px;
 }
 
 
 .back {    
-    
-    border-radius: 40px;
+   
+   border-radius: 40px;
 }
 
 .pageGitHubDiv{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
 }
