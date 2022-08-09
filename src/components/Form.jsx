@@ -3,7 +3,8 @@ import emailjs from '@emailjs/browser';
 import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import { useEffect } from 'react';
-
+import party from "party-js";
+import Toastify from 'toastify-js'
 
 export function Form() {
   const [show, setShow] = useState(false)
@@ -27,39 +28,29 @@ export function Form() {
   };
 
   const sendEmail = (e) => {
+
+   
     setError(true)
     e.preventDefault();
     validate(e)
-    // if(!error){
-
-    //   // emailjs.sendForm('service_l3jqtz3', 'template_wq47xpg', e.target, 'LidHyzsmZ0-R4ClFZ')
-    //   //   .then((result) => {
-    //   //       console.log(result.text);
-    //   //   }, (error) => {
-    //   //       console.log(error.text);
-    //   //   });
-    //     e.target.reset()
-    //     console.log('error',error)
-    //     handleShow();
-    //     setEmail(null)
-    // }
+ 
   }
 
   const fillEmailForm = (e) => {
-
     setEmail({
       ...email,
       [e.target.name]: e.target.value
     })
-    // console.log(email)
-
   }
 
   const validate = (e) => {
+    party.confetti(e.target, {
+      count: party.variation.range(20,40),
+    });
+   
     const form = document.getElementById('formulario')
     const errorMsg = document.getElementById("errorMsg")
     e.preventDefault()
-    console.log(email)
 
     if (email) {
       if (!email.name || !email.email || !email.lastname || !email.comment) {
@@ -70,7 +61,8 @@ export function Form() {
           setError(false)
           emailjs.sendForm('service_l3jqtz3', 'template_wq47xpg', e.target, 'LidHyzsmZ0-R4ClFZ')
             .then((result) => {
-                console.log(result.text);
+              console.log('ok');
+             
             }, (error) => {
                 console.log(error.text);
             });
@@ -80,12 +72,44 @@ export function Form() {
           errorMsg.innerText = ""
         } else {
           setError(true)
+          Toastify({
+            text: `Please enter a valid email :(`,
+            duration: 3000,
+      
+            newWindow: true,
+            close: false,
+            gravity: "top", // `top` or `bottom`
+            position: "center", // `left`, `center` or `right`
+            stopOnFocus: true, // Prevents dismissing of toast on hover
+            style: {
+              background: "red",
+              padding: "20px"
+            },
+            onClick: function () { } // Callback after click
+          }).showToast();
           errorMsg.innerText = `Please enter a valid email :(`
         }
       }
     } else {
       setError(true)
-      errorMsg.innerText = `Please fill all the fields :(`
+      console.log('bad fields');
+      
+      // errorMsg.innerText = `Please fill all the fields :(`
+      Toastify({
+        text: `Please fill all the fields :(`,
+        duration: 3000,
+  
+        newWindow: true,
+        close: false,
+        gravity: "top", // `top` or `bottom`
+        position: "center", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "red",
+          padding: "20px"
+        },
+        onClick: function () { } // Callback after click
+      }).showToast();
     }
   }
 
