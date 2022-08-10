@@ -1,0 +1,49 @@
+.medal{
+    width: 70px;
+    filter: drop-shadow(0px 5px 2px rgb(0 0 0 / 0.2));
+    
+    // -webkit-animation: mover 2s infinite alternate;
+    // animation: mover 1s infinite alternate;
+}
+
+.medal:hover{
+    background-color: white;
+    transition: 1s;
+    border-radius: 100%;
+}
+
+.medals{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
+    
+    justify-content: center;
+    align-items: center;    
+}
+
+$randomNumber: random(9);
+$randomNumber2: random(10);
+$randomNumber3: random(11);
+$randomNumber4: random(12);
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); transform: rotate(-5deg);}
+    50%  { transform: translate(0, $randomNumber+px); transform: translateX(3px); transform: rotate(10deg); }
+    100%   { transform: translate(0, -0px); transform: rotate(-5deg);}   
+}
+@keyframes floating2 {
+    0% { transform: translate(0,  0px); transform: rotate(5deg);}
+    50%  { transform: translate(0, $randomNumber2+px); transform: rotate(-5deg); }
+    100%   { transform: translate(0, -0px); transform: rotate(5deg);}   
+}
+@keyframes floating3 {
+    0% { transform: translate(0,  0px); transform: rotate(-3deg); }
+    50%  { transform: translate(0, $randomNumber3+px); transform: rotate(4deg);}
+    100%   { transform: translate(0, -0px); transform: rotate(-3deg);}   
+}
+@keyframes floating4 {
+    0% { transform: translate(0,  0px); transform: rotate(5deg);}
+    50%  { transform: translate(0, $randomNumber4+px);transform: rotate(-4deg); }
+    100%   { transform: translate(0, -0px); transform: rotate(5deg);}   
+}
