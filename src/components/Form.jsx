@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import party from "party-js";
 import Toastify from 'toastify-js'
 
+
 export function Form() {
   const [show, setShow] = useState(false)
   const [email, setEmail] = useState(null)
@@ -115,6 +116,8 @@ export function Form() {
 
   return <section id="contact">
 
+    
+    
   <div className='container'>
 
     <Modal show={show} onHide={handleClose}>

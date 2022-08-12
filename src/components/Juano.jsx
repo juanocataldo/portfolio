@@ -4,12 +4,12 @@ import { useEffect } from 'react'
 import '../css/me.css'
 import me from '../assets/me.png'
 
-export function Me() {
+export function Juano() {
     useEffect(()=> {
         Aos.init({duration:2000})
     }, [])
     return <div className="background" >
-        
+        <a href={CV} download>Click to download</a>
         <div data-aos="fade-down" className='container cardme'>
 
             <div>

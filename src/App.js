@@ -8,6 +8,7 @@ import { Projects } from './components/Projects';
 import { Feed } from './components/Feed';
 import useLocalStorage from 'use-local-storage'
 import { useEffect } from 'react';
+import { Profile } from './components/Profile';
 
 function App() {
   const defaultDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
@@ -39,6 +40,7 @@ function App() {
       <Firstbanner />
       <SecondBanner theme={theme} />
       <Projects theme={theme} />
+      <Profile theme={theme} />
       <Form theme={theme} />
       <Feed theme={theme} />
     </div>
