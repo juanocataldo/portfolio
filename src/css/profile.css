@@ -65,6 +65,6 @@
 
    .resume-title{
     text-decoration: underline white;
-    color: black;
+    color: var(--text-primary);
     
    }
