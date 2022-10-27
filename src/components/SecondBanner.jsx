@@ -25,6 +25,7 @@ import sass from '../assets/medals/sass.svg'
 import sql from '../assets/medals/sql.svg'
 import typescript from '../assets/medals/typescript.svg'
 import 'animate.css';
+import Scene from './Scene'
 
 export function SecondBanner({ theme }) {
 
@@ -33,7 +34,7 @@ export function SecondBanner({ theme }) {
     }, [])
 
 
-    return <section id="techs">
+    return <section id="techs" data-theme={theme}>
 
         <div className="banner2">
             <h4 data-aos="fade" data-aos-once='true' className="titles" style={{ textAlign: "center" }}>FULLSTACK?</h4>
@@ -42,7 +43,11 @@ export function SecondBanner({ theme }) {
 
             <div data-aos="fade-up" className="containerQ">
 
-                <img src={laptop} alt="laptop-img" id='laptop' />
+                    <Scene>
+                        <color attach="background" args={["black"]} />
+                        {/* <Laptop/> */}
+                    </Scene>
+                {/* <img src={laptop} alt="laptop-img" id='laptop' /> */}
                 <div className="v1"></div>
 
                 <img src={separator} alt="separator-img" id='separator' />
@@ -57,15 +62,18 @@ export function SecondBanner({ theme }) {
 
 
             </div>
-            <div className='letter mt-5'>
-                <span style={{ fontSize: "20px" }}>
-                    I'm a FullStack Web Developer in React/Redux, Node/Express, PostgreSQL/Sequelize. I'm looking for my first dev "job" (i put job in quotes because I see it more as a pleasure thing to do than a job). Coding is really my passion. Thinking that a developer can build something to resolve/optimize another job, is very inspiring.
+            <div className="letter" style={{marginTop:"-100px"}}>
+                <span style={{ fontSize: "14px" }}>
+                     <h1 style={{color: theme == 'Dark' ? "white" : "black", fontWeight:"bold"}}>Why a Duck?</h1> Is a reference to a story in the book The Pragmatic Programmer in which a programmer would carry around a rubber duck and debug their code by forcing themselves to explain it, line-by-line, to the duck
                 </span>
             </div>
-            <div className="title">
-                <h2>Techs</h2>                
+            <br /><br /><br /><br /><br />
+            <div className='letter mt-5'>
+                <span style={{ fontSize: "14px" }}>
+                    <h1 style={{color: theme == 'Dark' ? "white" : "black", fontWeight:"bold"}}>I'm a Fullstack MERN dev!</h1>What it means to be a Fullstack developer? A fullstack dev is capable of create an entire application (like portfolios, ecoomerce's, CRM, and more), without any intervetion of another person. <br />I'm currently looking for my first dev job (Frontend or Fullstack). Being a JR is hard this days.<br/> Coding is really my passion. Thinking that a developer can build something to resolve/optimize another job, is very inspiring.
+                </span>
             </div>
-
+         
             <div className='medals'>
                 <div data-aos="fade-up" data-aos-once='true' className='effect1' >
                     <Medal imagen={react} />
@@ -101,21 +109,6 @@ export function SecondBanner({ theme }) {
                
 
 
-
-
-
-
-
-
-                {/* <Medal imagen={postman} /> */}
-
-
-
-
-
-
-
-
             </div>
 
             <div className="medals">
@@ -147,6 +140,7 @@ export function SecondBanner({ theme }) {
                     <Medal imagen={mysql} />
                 </div>
             </div>
+            
         </div>
     </section>
 }

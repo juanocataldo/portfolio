@@ -1,18 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-.title{
+.title {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     margin-top: 50px;
 }
+
 .titles {
     font-family: 'Roboto', sans-serif;
     font-size: 15vw;
     text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.265);
     color: var(--text-primary);
 }
+
 .banner2 {
     /* background-color: #e0e0e0; */
     margin-top: 50px;
@@ -28,7 +30,7 @@ svg {
 
 /* CEL */
 @media only screen and (min-width: 200px) and (max-width: 686px) {
-   
+
 
     .fullstack {
         text-align: justify;
@@ -138,16 +140,16 @@ svg {
 
 /* GRANDE */
 @media only screen and (min-width: 685px) {
-   
+
 
     .fullstack {
         text-align: center;
         color: white;
         padding: 40px;
-        
+
     }
 
-    .fullstack span{
+    .fullstack span {
         font-size: 10px;
     }
 
@@ -240,8 +242,13 @@ svg {
 
 
     .techs {
-        text-align: left;
-        margin-left: 10px;
+        position: absolute;
+    width: 90%;
+    height: 100%;    
+    /* background-color: red; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
         text-shadow: 2px 0 10px rgba(0, 0, 0, 0.372), -2px 0 10px rgba(0, 0, 0, 0.372), 0 2px 10px rgba(0, 0, 0, 0.372), 0 -2px 10px rgba(0, 0, 0, 0.372), 1px 1px rgba(0, 0, 0, 0.372), -1px -1px 0 rgba(0, 0, 0, 0.372), 1px -1px 0 rgba(0, 0, 0, 0.372), -1px 1px 0 rgba(0, 0, 0, 0.372);
     }
 
@@ -262,7 +269,7 @@ svg {
     font-family: 'Roboto', sans-serif;
     text-align: center;
     color: #4cacb3;
-    
+
 }
 
 .move:first-of-type {
@@ -344,15 +351,15 @@ svg {
     }
 }
 
-.letter{
+.letter {
     width: min(700px, 100%);
     /* height: 200px; */
     margin-top: 40px;
     text-align: center;
     margin: auto;
-    
+
 }
 
-.letter span{
+.letter span {
     color: var(--text-secondary);
 }

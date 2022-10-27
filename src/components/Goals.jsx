@@ -14,7 +14,7 @@ export function Goals({theme}) {
     }, [])
 
     return <div className='App' data-theme={theme}>
-        <h1 data-aos="fade" data-aos-once='true' className='titles' style={{textAlign:"center"}} >GOALS</h1>
+        <h1 data-aos="fade" data-aos-once='true' className='titles' style={{textAlign:"center", marginTop:"150px"}} >GOALS</h1>
         <div className="goalGrid">
 
         <div class="cardw">

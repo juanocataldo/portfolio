@@ -30,11 +30,13 @@ function App() {
 
       <Navbar theme={theme} />
       <div className='toggleBar'>
+        <div id='toggle'>
         <span>{theme} Mode</span>
         <label class="switch">
           <input type="checkbox" onChange={switchTheme} />
           <span class="slider"></span>
         </label>
+        </div>
       </div>
       
       <Firstbanner />
